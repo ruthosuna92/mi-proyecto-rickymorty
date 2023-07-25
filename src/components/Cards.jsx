@@ -1,13 +1,13 @@
 import Card from './Card';
 
-export default function Cards(props) {
-   const {characters} = props
-   console.log(props)
-   console.log(characters[0].origin.name)
+
+const Cards = ({characters}) => { 
+
+     
    return (
       <div> 
          {
-            characters.map(char => {
+            characters.map((char) => {
                return <Card
                   id={char.id}
                   name={char.name}
@@ -24,3 +24,5 @@ export default function Cards(props) {
      </div>
    );
 }
+
+export default Cards

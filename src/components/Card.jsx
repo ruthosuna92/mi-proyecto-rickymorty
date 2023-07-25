@@ -1,6 +1,6 @@
 
-export default function Card({onClose, name, status, species, gender, origin, image, id}) {
-
+const Card = ({onClose, name, status, species, gender, origin, image, id}) => {
+   
    return (
       <div key = {id}>
          <button onClick={onClose}>X</button>
@@ -13,3 +13,5 @@ export default function Card({onClose, name, status, species, gender, origin, im
       </div>
    );
 }
+
+export default Card
